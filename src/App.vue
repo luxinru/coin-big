@@ -28,6 +28,18 @@ export default {
 </script>
 
 <style lang="less">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
 .slide-left-enter-active {
   animation-name: slide-left-in;
   animation-duration: 0.3s;
