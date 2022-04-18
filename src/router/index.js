@@ -13,16 +13,36 @@ const routes = [
     name: 'Login',
     component: () => import(/* webpackChunkName: "Login" */ '../views/login.vue'),
     meta: {
-      level: 1
+      level: 1,
+      isShowFooter: false
     }
   },
   {
     path: '/register',
     name: 'Register',
     meta: {
-      level: 2
+      level: 2,
+      isShowFooter: false
     },
     component: () => import(/* webpackChunkName: "Register" */ '../views/register.vue')
+  },
+  {
+    path: '/home',
+    name: 'Home',
+    component: () => import(/* webpackChunkName: "Home" */ '../views/home.vue'),
+    meta: {
+      level: 1,
+      isShowFooter: true
+    }
+  },
+  {
+    path: '/kline',
+    name: 'Kline',
+    component: () => import(/* webpackChunkName: "Kline" */ '../views/kline.vue'),
+    meta: {
+      level: 1,
+      isShowFooter: true
+    }
   }
 ]
 
