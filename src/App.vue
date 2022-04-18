@@ -107,6 +107,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: scroll;
+  padding-bottom: 62px;
 }
 
 .mt16 {

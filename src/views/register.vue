@@ -1,6 +1,6 @@
 <template>
   <div class="page_root">
-    <img class="logo" src="" alt="" />
+    <img class="logo" src="@/assets/images/CoinBig@2x.png" alt="" />
 
     <div class="item">
       <van-field
@@ -125,8 +125,7 @@ export default {
   .footer {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 24px;
 
     span {
@@ -134,13 +133,11 @@ export default {
       display: flex;
       align-items: center;
       word-break: break-all;
-      justify-content: flex-end;
       font-size: 13px;
       font-weight: 400;
       color: #4768d3;
       &:first-child {
-        justify-content: flex-start;
-
+        margin-bottom: 4px;
         p {
           font-size: 13px;
           font-weight: 400;
@@ -149,7 +146,6 @@ export default {
 
           &:last-child {
             color: #4768d3;
-            margin-left: 0;
           }
         }
       }

@@ -1,6 +1,6 @@
 <template>
   <div class="page_root">
-    <img class="logo" src="" alt="" />
+    <img class="logo" src="@/assets/images/CoinBig@2x.png" alt="" />
 
     <div class="item">
       <van-field
@@ -31,7 +31,11 @@
       </span>
     </section>
 
-    <Btn class="btnmargin" :title="$t('uc.login.login')"></Btn>
+    <Btn
+      class="btnmargin"
+      :title="$t('uc.login.login')"
+      @click="$router.push({ name: 'Home' })"
+    ></Btn>
   </div>
 </template>
 
