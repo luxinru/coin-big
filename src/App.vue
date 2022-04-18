@@ -101,6 +101,22 @@ export default {
   min-height: 100vh;
 }
 
+.page_root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mt16 {
+  margin-top: 16px;
+}
+
+.btnmargin {
+  margin: 36px 0;
+}
+
 .slide-left-enter-active {
   animation-name: slide-left-in;
   animation-duration: 0.3s;

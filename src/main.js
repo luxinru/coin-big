@@ -3,6 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import VueI18n from 'vue-i18n'
+import Vant from 'vant'
+import 'vant/lib/index.css'
+import Btn from './components/btn.vue'
+
 import cn from './assets/lang/cn'
 import de from './assets/lang/de'
 import en from './assets/lang/en'
@@ -18,6 +22,9 @@ import ru from './assets/lang/ru'
 Vue.config.productionTip = false
 
 Vue.use(VueI18n)
+Vue.use(Vant)
+
+Vue.component('Btn', Btn)
 
 const lang = {
   cn,
