@@ -13,14 +13,14 @@
         <img v-else src="@/assets/images/首页 拷贝 2.png" alt="" />
         <span :class="{active: route.name === 'Home'}">{{ $t('header.index') }}</span>
       </div>
-      <div class="item" @click="onClickItem('Kline')">
+      <div class="item" @click="onClickItem('Quotes')">
         <img
-          v-if="route.name === 'Kline'"
+          v-if="route.name === 'Quotes'"
           src="@/assets/images/markets 拷贝.png"
           alt=""
         />
         <img v-else src="@/assets/images/markets 拷贝 2.png" alt="" />
-        <span :class="{active: route.name === 'Kline'}">{{ $t('option.kline') }}</span>
+        <span :class="{active: route.name === 'Quotes'}">{{ $t('option.kline') }}</span>
       </div>
       <div class="item" @click="onClickItem('Exchange')">
         <img
@@ -99,6 +99,7 @@ export default {
 #app {
   width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .page_root {

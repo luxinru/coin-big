@@ -36,12 +36,21 @@ const routes = [
     }
   },
   {
-    path: '/kline',
-    name: 'Kline',
-    component: () => import(/* webpackChunkName: "Kline" */ '../views/kline.vue'),
+    path: '/quotes',
+    name: 'Quotes',
+    component: () => import(/* webpackChunkName: "Quotes" */ '../views/quotes.vue'),
     meta: {
       level: 1,
       isShowFooter: true
+    }
+  },
+  {
+    path: '/quotes/details/:id',
+    name: 'QuotesDetails',
+    component: () => import(/* webpackChunkName: "Quotes" */ '../views/quotes-details.vue'),
+    meta: {
+      level: 2,
+      isShowFooter: false
     }
   }
 ]
