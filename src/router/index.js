@@ -52,6 +52,15 @@ const routes = [
       level: 2,
       isShowFooter: false
     }
+  },
+  {
+    path: '/mine',
+    name: 'Mine',
+    component: () => import(/* webpackChunkName: "Mine" */ '../views/mine.vue'),
+    meta: {
+      level: 1,
+      isShowFooter: true
+    }
   }
 ]
 
