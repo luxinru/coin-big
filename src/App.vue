@@ -74,7 +74,7 @@ export default {
     $route (to, from) {
       const toDepth = to.meta.level
       const fromDepth = from.meta.level
-      this.transitionName = toDepth > fromDepth ? 'slide-left' : 'slide-right'
+      this.transitionName = toDepth >= fromDepth ? 'slide-left' : 'slide-right'
     }
   },
 

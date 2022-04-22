@@ -2,8 +2,12 @@
   <div class="page_root">
     <section class="header">
       <div class="icons">
-        <img src="" />
-        <img src="" />
+        <van-icon
+          name="shield-o"
+          size="18"
+          @click="$router.push({ path: '/security-settings' })"
+        />
+        <van-icon name="setting-o" size="18" />
       </div>
 
       <div class="user">
@@ -92,10 +96,8 @@ export default {
       justify-content: flex-end;
       padding: 0 24px;
       margin-top: 11px;
-      img {
-        height: 18px;
+      i {
         &:first-child {
-          height: 21px;
           margin-right: 18px;
         }
       }

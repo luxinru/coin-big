@@ -61,6 +61,42 @@ const routes = [
       level: 1,
       isShowFooter: true
     }
+  },
+  {
+    path: '/security-settings',
+    name: 'SecuritySettings',
+    component: () => import(/* webpackChunkName: "SecuritySettings" */ '../views/security-settings.vue'),
+    meta: {
+      level: 2,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/authentication',
+    name: 'Authentication',
+    component: () => import(/* webpackChunkName: "Authentication" */ '../views/authentication.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/mailbox-mgt',
+    name: 'MailboxMgt',
+    component: () => import(/* webpackChunkName: "MailboxMgt" */ '../views/mailbox-mgt.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/mail-verification',
+    name: 'MailVerification',
+    component: () => import(/* webpackChunkName: "MailVerification" */ '../views/mail-verification.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
   }
 ]
 
