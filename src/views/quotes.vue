@@ -9,7 +9,7 @@
     <van-tabs v-model="active" color="rgba(58, 110, 218, 1)" class="tabs">
       <van-tab v-for="(item, index) in tabsOptions" :key="index" :title="item">
         <div class="list">
-          <div class="item" v-for="j in 15" :key="j" @click="onItemClick">
+          <div class="item" v-for="j in 15" :key="j">
             <div class="name">
               <p>
                 BTC

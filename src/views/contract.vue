@@ -5,9 +5,9 @@
       <van-tab :title="$t('header.swap1')"></van-tab>
     </van-tabs>
     <section class="title">
-      <img src="" alt="" @click="show = true" />
+      <img src="@/assets/images/更多 拷贝.png" alt="" @click="show = true" />
       <span>ETH/BTC</span>
-      <img src="" alt="" />
+      <img src="@/assets/images/更多 拷贝.png" alt="" />
     </section>
 
     <section class="info">

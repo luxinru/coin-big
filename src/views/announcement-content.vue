@@ -32,7 +32,7 @@ export default {
 
 <style lang="less" scoped>
 .page_root {
-  padding: 0 20px;
+
   .title {
     width: 100%;
     margin-top: 24px;
@@ -40,6 +40,7 @@ export default {
     font-weight: 500;
     color: #12141f;
     text-align: center;
+    padding: 0 20px;
   }
 
   .content {
@@ -48,6 +49,7 @@ export default {
     font-size: 16px;
     font-weight: 400;
     color: #13161B;
+    padding: 0 20px;
   }
 }
 </style>

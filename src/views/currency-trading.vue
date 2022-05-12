@@ -5,7 +5,7 @@
     <section class="title">
       <img src="@/assets/images/更多 拷贝.png" />
       <span> NEO/USDT </span>
-      <img src="@/assets/images/更多 拷贝.png" />
+      <img src="@/assets/images/收藏 拷贝.png" />
       <img src="@/assets/images/更多 拷贝.png" />
     </section>
 
@@ -108,7 +108,7 @@
           <van-tab title="当前委托"></van-tab>
           <van-tab title="历史委托"></van-tab>
         </van-tabs>
-        <span class="more">更多>></span>
+        <span class="more" @click="$router.push('/confiar')">更多>></span>
       </div>
 
       <div class="footer_content">

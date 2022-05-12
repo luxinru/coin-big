@@ -7,7 +7,11 @@
           size="18"
           @click="$router.push({ path: '/security-settings' })"
         />
-        <van-icon name="setting-o" size="18" />
+        <van-icon
+          name="setting-o"
+          size="18"
+          @click="$router.push('/settings')"
+        />
       </div>
 
       <div class="user">
@@ -18,46 +22,54 @@
     </section>
 
     <section class="contents">
-      <div class="item">
+      <div class="item" @click="$router.push('/my-assets')">
         <img class="icon" src="@/assets/images/我的_slices/资产.png" />
         <span class="name">我的资产</span>
         <img class="more" src="@/assets/images/邀请.png" />
       </div>
-      <div class="item">
+
+      <div class="item" @click="$router.push('/asset-flow')">
         <img class="icon" src="@/assets/images/我的_slices/资金流水.png" />
         <span class="name">资产流水</span>
         <img class="more" src="@/assets/images/邀请.png" />
       </div>
+
       <div class="item">
         <img class="icon" src="@/assets/images/我的_slices/设置 (2).png" />
         <span class="name">收款设置</span>
         <img class="more" src="@/assets/images/邀请.png" />
       </div>
-      <div class="item">
+
+      <div class="item" @click="$router.push('/set-fundpwd')">
         <img class="icon" src="@/assets/images/我的_slices/密码.png" />
         <span class="name">资金密码</span>
         <img class="more" src="@/assets/images/邀请.png" />
       </div>
-      <div class="item">
+
+      <div class="item" @click="$router.push('/records')">
         <img class="icon" src="@/assets/images/我的_slices/品类管理.png" />
         <span class="name">货币管理</span>
         <img class="more" src="@/assets/images/邀请.png" />
       </div>
-      <div class="item">
+
+      <div class="item" @click="$router.push('/activity')">
         <img class="icon" src="@/assets/images/我的_slices/邀请有礼.png" />
         <span class="name">我的活动</span>
         <img class="more" src="@/assets/images/邀请.png" />
       </div>
-      <div class="item">
+
+      <div class="item" @click="$router.push('/my-miner')">
         <img class="icon" src="@/assets/images/我的_slices/矿机.png" />
         <span class="name">我的矿机</span>
         <img class="more" src="@/assets/images/邀请.png" />
       </div>
-      <div class="item">
+
+      <div class="item" @click="$router.push('/lockup-mining')">
         <img class="icon" src="@/assets/images/我的_slices/锁仓转入余额.png" />
         <span class="name">我的锁仓</span>
         <img class="more" src="@/assets/images/邀请.png" />
       </div>
+
       <div class="item">
         <img class="icon" src="@/assets/images/我的_slices/邀请.png" />
         <span class="name">邀请链接</span>

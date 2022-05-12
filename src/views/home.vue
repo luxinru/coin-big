@@ -35,7 +35,7 @@
           <img src="@/assets/images/组 29 拷贝.png" />
           <span>{{ $t('cms.noticecenter') }}</span>
         </div>
-        <div class="item">
+        <div class="item" @click="$router.push('/activity')">
           <img src="@/assets/images/组 29 拷贝 3.png" />
           <span>{{ $t('header.activity') }}</span>
         </div>

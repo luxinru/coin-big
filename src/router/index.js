@@ -178,6 +178,132 @@ const routes = [
       level: 3,
       isShowFooter: false
     }
+  },
+  {
+    path: '/activity',
+    name: 'Activity',
+    component: () => import(/* webpackChunkName: "Activity" */ '../views/activity.vue'),
+    meta: {
+      level: 2,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/my-assets',
+    name: 'MyAssets',
+    component: () => import(/* webpackChunkName: "MyAssets" */ '../views/my-assets.vue'),
+    meta: {
+      level: 2,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/asset-flow',
+    name: 'AssetFlow',
+    component: () => import(/* webpackChunkName: "AssetFlow" */ '../views/asset-flow.vue'),
+    meta: {
+      level: 2,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/set-fundpwd',
+    name: 'SetFundpwd',
+    component: () => import(/* webpackChunkName: "SetFundpwd" */ '../views/set-fundpwd.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/settings',
+    name: 'Settings',
+    component: () => import(/* webpackChunkName: "Settings" */ '../views/settings.vue'),
+    meta: {
+      level: 2,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/my-miner',
+    name: 'MyMiner',
+    component: () => import(/* webpackChunkName: "MyMiner" */ '../views/my-miner.vue'),
+    meta: {
+      level: 2,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/lockup-mining',
+    name: 'LockupMining',
+    component: () => import(/* webpackChunkName: "LockupMining" */ '../views/lockup-mining.vue'),
+    meta: {
+      level: 2,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/feedback',
+    name: 'Feedback',
+    component: () => import(/* webpackChunkName: "Feedback" */ '../views/feedback.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/set-loginpwd',
+    name: 'SetLoginpwd',
+    component: () => import(/* webpackChunkName: "SetLoginpwd" */ '../views/set-loginpwd.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/language',
+    name: 'Language',
+    component: () => import(/* webpackChunkName: "Language" */ '../views/language.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/records',
+    name: 'Records',
+    component: () => import(/* webpackChunkName: "Records" */ '../views/records.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import(/* webpackChunkName: "About" */ '../views/about.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/confiar',
+    name: 'Confiar',
+    component: () => import(/* webpackChunkName: "Confiar" */ '../views/confiar.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/confiar-detail',
+    name: 'ConfiarDetail',
+    component: () => import(/* webpackChunkName: "ConfiarDetail" */ '../views/confiar-detail.vue'),
+    meta: {
+      level: 4,
+      isShowFooter: false
+    }
   }
 ]
 

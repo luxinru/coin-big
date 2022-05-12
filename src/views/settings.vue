@@ -1,74 +1,59 @@
 <template>
   <div class="page_root">
-    <van-nav-bar
-      class="nav_bar"
-      title="安全设置"
-      left-arrow
-      @click-left="onClickLeft"
-    />
-
-    <section class="avatar">
-      <img class="info" src="" />
-      <span>修改</span>
-      <img class="more" src="@/assets/images/邀请.png" />
+    <section class="topbar">
+      <van-icon name="arrow-left" class="icon" @click="$router.go(-1)" />
+      <span>设置中心</span>
     </section>
 
     <section class="infos">
-      <div class="item" @click="$router.push({ path: '/authentication' })">
-        <span class="name">身份认证</span>
-        <span class="value">已认证</span>
+      <div class="item" @click="$router.push('/language')">
+        <span class="name">语言设置</span>
         <img src="@/assets/images/邀请.png" />
       </div>
-      <div class="item" @click="$router.push({ path: '/mail-verification' })">
-        <span class="name">绑定邮箱</span>
-        <span class="value">已绑定</span>
+      <div class="item" @click="$router.push('/feedback')">
+        <span class="name">反馈意见</span>
         <img src="@/assets/images/邀请.png" />
       </div>
-      <div class="item" @click="$router.push('/set-loginpwd')">
-        <span class="name">登录密码</span>
-        <span class="value">已设置</span>
+      <div class="item" @click="$router.push('/about')">
+        <span class="name">关于我们</span>
         <img src="@/assets/images/邀请.png" />
       </div>
-      <div class="item" @click="$router.push('/set-fundpwd')">
-        <span class="name">资金密码</span>
-        <span class="value">已设置</span>
+      <div class="item">
+        <span class="name">公告中心</span>
+        <img src="@/assets/images/邀请.png" />
+      </div>
+    </section>
+    <section class="infos" style="border-bottom: none;">
+      <div class="item">
+        <span class="name">版本更新</span>
+        <span class="value">
+          1.7
+        </span>
         <img src="@/assets/images/邀请.png" />
       </div>
     </section>
 
-    <section class="tip">
-      为保障您的账户安全,请完成实名认证后方可交易操作!
-    </section>
+    <div class="btn">
+      退出登录
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SecuritySettings',
+  name: 'Settings',
 
   data () {
     return {}
   },
 
   methods: {
-    onClickLeft () {
-      this.$router.go(-1)
-    }
   }
 }
 </script>
 
 <style lang="less" scoped>
 .page_root {
-  .nav_bar {
-    width: 100%;
-
-    /deep/ .van-nav-bar__left {
-      i {
-        color: #000;
-      }
-    }
-  }
 
   .avatar {
     width: 100%;
@@ -116,17 +101,16 @@ export default {
       border-top: 1px solid rgba(238, 238, 238, 1);
       padding: 0 19px;
       .name {
+        flex: 1 0;
         font-size: 16px;
         font-weight: 400;
         color: #131521;
       }
 
       .value {
-        flex: 1 0;
         font-size: 16px;
         font-weight: 400;
         color: #3b6fdc;
-        text-align: right;
       }
 
       img {
@@ -136,15 +120,18 @@ export default {
     }
   }
 
-  .tip {
-    width: 100%;
-    height: 13px;
-    font-size: 13px;
+  .btn {
+    width: 337px;
+    height: 48px;
+    background: #3B6FDC;
+    border-radius: 4px;
+    font-size: 16px;
     font-weight: 400;
-    color: #ff2e0c;
-    margin-top: 19px;
-    padding: 0 19px;
-    word-break: break-all;
+    color: #FFFFFF;
+    margin-top: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>
