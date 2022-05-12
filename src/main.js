@@ -46,6 +46,14 @@ const i18n = new VueI18n({
   messages: lang // 设置地区信息
 })
 
+/**
+ * 进入每一个页面回到顶部
+ */
+router.beforeEach((to, from, next) => {
+  document.body.scrollTop = document.documentElement.scrollTop = 0
+  next()
+})
+
 new Vue({
   router,
   store,

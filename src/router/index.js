@@ -97,6 +97,87 @@ const routes = [
       level: 3,
       isShowFooter: false
     }
+  },
+  {
+    path: '/contract',
+    name: 'Contract',
+    component: () => import(/* webpackChunkName: "Contract" */ '../views/contract.vue'),
+    meta: {
+      level: 1,
+      isShowFooter: true
+    }
+  },
+  {
+    path: '/currency-trading',
+    name: 'CurrencyTrading',
+    component: () => import(/* webpackChunkName: "CurrencyTrading" */ '../views/currency-trading.vue'),
+    meta: {
+      level: 1,
+      isShowFooter: true
+    }
+  },
+  {
+    path: '/recharge',
+    name: 'Recharge',
+    component: () => import(/* webpackChunkName: "Recharge" */ '../views/recharge.vue'),
+    meta: {
+      level: 2,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/recharge-details',
+    name: 'RechargeDetails',
+    component: () => import(/* webpackChunkName: "RechargeDetails" */ '../views/recharge-details.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/withdraw',
+    name: 'Withdraw',
+    component: () => import(/* webpackChunkName: "Withdraw" */ '../views/withdraw.vue'),
+    meta: {
+      level: 2,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/help',
+    name: 'Help',
+    component: () => import(/* webpackChunkName: "Help" */ '../views/help.vue'),
+    meta: {
+      level: 2,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/help-content',
+    name: 'HelpContent',
+    component: () => import(/* webpackChunkName: "HelpContent" */ '../views/help-content.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/announcement',
+    name: 'Announcement',
+    component: () => import(/* webpackChunkName: "Announcement" */ '../views/announcement.vue'),
+    meta: {
+      level: 2,
+      isShowFooter: false
+    }
+  },
+  {
+    path: '/announcement-content',
+    name: 'AnnouncementContent',
+    component: () => import(/* webpackChunkName: "AnnouncementContent" */ '../views/announcement-content.vue'),
+    meta: {
+      level: 3,
+      isShowFooter: false
+    }
   }
 ]
 

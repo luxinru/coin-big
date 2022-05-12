@@ -5,49 +5,55 @@
     </transition>
     <section class="footer" v-if="route.meta.isShowFooter">
       <div class="item" @click="onClickItem('Home')">
-        <img
-          v-if="route.name === 'Home'"
-          src="@/assets/images/首页 拷贝.png"
-          alt=""
-        />
-        <img v-else src="@/assets/images/首页 拷贝 2.png" alt="" />
-        <span :class="{active: route.name === 'Home'}">{{ $t('header.index') }}</span>
+        <img v-if="route.name === 'Home'" src="@/assets/images/首页 拷贝.png" />
+        <img v-else src="@/assets/images/首页 拷贝 2.png" />
+        <span :class="{ active: route.name === 'Home' }">{{
+          $t('header.index')
+        }}</span>
       </div>
+
       <div class="item" @click="onClickItem('Quotes')">
         <img
           v-if="route.name === 'Quotes'"
           src="@/assets/images/markets 拷贝.png"
-          alt=""
         />
-        <img v-else src="@/assets/images/markets 拷贝 2.png" alt="" />
-        <span :class="{active: route.name === 'Quotes'}">{{ $t('option.kline') }}</span>
+        <img v-else src="@/assets/images/markets 拷贝 2.png" />
+        <span :class="{ active: route.name === 'Quotes' }">{{
+          $t('option.kline')
+        }}</span>
       </div>
-      <div class="item" @click="onClickItem('Exchange')">
+
+      <div class="item" @click="onClickItem('CurrencyTrading')">
         <img
-          v-if="route.name === 'Exchange'"
-          src="@/assets/images/Exchange 拷贝 2.png"
-          alt=""
+          v-if="route.name === 'CurrencyTrading'"
+          src="@/assets/images/Exchange 拷贝.png"
         />
-        <img v-else src="@/assets/images/Exchange 拷贝 2.png" alt="" />
-        <span :class="{active: route.name === 'Exchange'}">{{ $t('uc.finance.trade.exchange') }}</span>
+        <img v-else src="@/assets/images/Exchange 拷贝 2.png" />
+        <span :class="{ active: route.name === 'CurrencyTrading' }">{{
+          $t('uc.finance.trade.exchange')
+        }}</span>
       </div>
+
       <div class="item" @click="onClickItem('Contract')">
         <img
           v-if="route.name === 'Contract'"
           src="@/assets/images/file-contract 拷贝.png"
-          alt=""
         />
-        <img v-else src="@/assets/images/file-contract 拷贝 2.png" alt="" />
-        <span :class="{active: route.name === 'Contract'}">{{ $t('swap.contract') }}</span>
+        <img v-else src="@/assets/images/file-contract 拷贝 2.png" />
+        <span :class="{ active: route.name === 'Contract' }">{{
+          $t('swap.contract')
+        }}</span>
       </div>
+
       <div class="item" @click="onClickItem('Mine')">
         <img
           v-if="route.name === 'Mine'"
           src="@/assets/images/my_fill 拷贝.png"
-          alt=""
         />
-        <img v-else src="@/assets/images/my_fill 拷贝 2.png" alt="" />
-        <span :class="{active: route.name === 'Mine'}">{{ $t('uc.member.usercenter') }}</span>
+        <img v-else src="@/assets/images/my_fill 拷贝 2.png" />
+        <span :class="{ active: route.name === 'Mine' }">{{
+          $t('uc.member.usercenter')
+        }}</span>
       </div>
     </section>
   </div>
@@ -110,6 +116,23 @@ export default {
   align-items: center;
   overflow-y: scroll;
   padding-bottom: 62px;
+}
+
+.topbar {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+
+  .icon {
+    position: absolute;
+    left: 13px;
+  }
 }
 
 .mt16 {
@@ -207,7 +230,7 @@ export default {
     }
 
     .active {
-      color: #3453C4;
+      color: #3453c4;
     }
   }
 }

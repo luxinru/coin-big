@@ -3,7 +3,10 @@
     <section class="header">
       <div class="logos">
         <img src="@/assets/images/组 145 拷贝.png" />
-        <img src="@/assets/images/登录-选中.png" />
+        <img
+          src="@/assets/images/登录-选中.png"
+          @click="$router.push('/mine')"
+        />
       </div>
 
       <div class="info">
@@ -12,19 +15,23 @@
           <span>$6986188.000000</span>
         </div>
         <div class="btns">
-          <span>{{ $t('uc.finance.record.charge') }}</span>
-          <span>{{ $t('uc.finance.record.pickup') }}</span>
+          <span @click="$router.push('/recharge')">
+            {{ $t('uc.finance.record.charge') }}
+          </span>
+          <span @click="$router.push('/withdraw')">
+            {{ $t('uc.finance.record.pickup') }}
+          </span>
         </div>
       </div>
     </section>
 
     <section class="content">
       <div class="funs">
-        <div class="item">
+        <div class="item" @click="$router.push('/help')">
           <img src="@/assets/images/组 29.png" />
           <span>{{ $t('footer.bzzx') }}</span>
         </div>
-        <div class="item">
+        <div class="item" @click="$router.push('/announcement')">
           <img src="@/assets/images/组 29 拷贝.png" />
           <span>{{ $t('cms.noticecenter') }}</span>
         </div>
@@ -111,17 +118,13 @@
       <div class="gainers_list">
         <div class="title">涨幅榜</div>
         <div class="item" v-for="index in 10" :key="index">
-          <img src="" alt="">
+          <img src="" alt="" />
           <span class="name">
             BTC
             <p>/USDT</p>
           </span>
-          <span class="value">
-            35612.5
-          </span>
-          <span class="btn">
-            +2.23%
-          </span>
+          <span class="value"> 35612.5 </span>
+          <span class="btn"> +2.23% </span>
         </div>
       </div>
     </section>
@@ -368,14 +371,14 @@ export default {
         .name {
           font-size: 16px;
           font-weight: 500;
-          color: #17191E;
+          color: #17191e;
           display: flex;
           align-items: flex-end;
 
           p {
             font-size: 11px;
             font-weight: 500;
-            color: #9CA2AC;
+            color: #9ca2ac;
             margin-left: 6px;
           }
         }
@@ -384,7 +387,7 @@ export default {
           flex: 1 0;
           font-size: 16px;
           font-weight: bold;
-          color: #272A2F;
+          color: #272a2f;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -394,14 +397,14 @@ export default {
         .btn {
           width: 78px;
           min-height: 34px;
-          background: #59AA87;
+          background: #59aa87;
           border-radius: 3px;
           display: flex;
           align-items: center;
           justify-content: center;
           font-size: 13px;
           font-weight: bold;
-          color: #FFFFFF;
+          color: #ffffff;
           padding: 4px;
         }
       }
